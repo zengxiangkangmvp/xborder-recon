@@ -1,0 +1,14 @@
+version: 1
+fx:
+  source: fixed            # fixed | manual
+  rates:
+    USD: 7.10
+    EUR: 7.75
+allocation:
+  ad_cost:
+    method: sku_revenue    # by_sku_revenue | equal | manual
+    manual: {}             # sku -> weight
+timing:
+  return_attribution: order_period   # order_period | refund_period
+tolerance:
+  amount: "0.01"
